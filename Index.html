@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Habeeb Azeez Portfolio</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f5f5f5;
+    color:#333;
+}
+
+header{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:50px 20px;
+}
+
+.profile-img{
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    object-fit:cover;
+    border:4px solid white;
+    margin-bottom:15px;
+}
+
+.container{
+    width:90%;
+    max-width:1100px;
+    margin:auto;
+    padding:20px;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    margin:20px 0;
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+h2{
+    margin-bottom:15px;
+}
+
+.skills{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+}
+
+.skill{
+    background:#222;
+    color:white;
+    padding:8px 15px;
+    border-radius:20px;
+}
+
+.projects{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:20px;
+}
+
+.project{
+    border:1px solid #ddd;
+    border-radius:10px;
+    overflow:hidden;
+}
+
+.project img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+}
+
+.project-content{
+    padding:15px;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:10px;
+    padding:10px 15px;
+    background:#222;
+    color:white;
+    text-decoration:none;
+    border-radius:5px;
+}
+
+footer{
+    text-align:center;
+    background:#222;
+    color:white;
+    padding:20px;
+    margin-top:20px;
+}
+
+@media(max-width:600px){
+    header h1{
+        font-size:1.8rem;
+    }
+}
+</style>
+</head>
+<body>
+
+<header>
+
+    <!-- ADD YOUR PROFILE PHOTO HERE -->
+    <img src="images/Profile.jpg" alt="Profile Photo" class="profile-img">
+
+    <h1>Habeeb Azeez</h1>
+    <p>Frontend Developer | HTML | CSS | JavaScript</p>
+
+</header>
+
+<div class="container">
+
+    <div class="card">
+        <h2>About Me</h2>
+        <p>
+            I'm a frontend developer passionate about building
+            responsive and user-friendly websites using HTML,
+            CSS and JavaScript.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>Skills</h2>
+
+        <div class="skills">
+            <span class="skill">HTML</span>
+            <span class="skill">CSS</span>
+            <span class="skill">JavaScript</span>
+            <span class="skill">Responsive Design</span>
+            <span class="skill">GitHub</span>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Projects</h2>
+
+        <div class="projects">
+
+            <div class="project">
+
+                <!-- PROJECT SCREENSHOT 1 -->
+                <img src="images/project1.jpg" alt="Project 1">
+
+                <div class="project-content">
+                    <h3>Portfolio Website</h3>
+                    <p>Personal portfolio website.</p>
+                    <a href="#" class="btn">View Project</a>
+                </div>
+            </div>
+
+            <div class="project">
+
+                <!-- PROJECT SCREENSHOT 2 -->
+                <img src="images/project2.jpg" alt="Project 2">
+
+                <div class="project-content">
+                    <h3>Business Website</h3>
+                    <p>Responsive business website.</p>
+                    <a href="https://habeeb6677.github.io/Business-/" class="btn">View Project</a>
+                </div>
+            </div>
+
+            <div class="project">
+
+                <!-- PROJECT SCREENSHOT 3 -->
+                <img src="images/project3.jpg" alt="Project 3">
+
+                <div class="project-content">
+                    <h3>Landing Page</h3>
+                    <p>Modern landing page design.</p>
+                    <a href="https://habeeb6677.github.io/slide-show/" class="btn">View Project</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Contact</h2>
+
+        <p>Email: azeezhabeeb427@gmail.com</p>
+        <p>Phone: +234 901 451 2601</p>
+        <p>GitHub: github.com/habeeb6677</p>
+    </div>
+
+</div>
+
+<footer>
+    <p>© 2026 Habeeb Azeez. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
